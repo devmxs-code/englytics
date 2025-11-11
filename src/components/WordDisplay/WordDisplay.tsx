@@ -66,7 +66,7 @@ export function WordDisplay({
 
           {audioUrl && (
             <button
-              className={`p-2 rounded-full ${
+              className={`p-2 rounded-full text-gray-700 dark:text-gray-300 ${
                 audioPlaying
                   ? 'bg-slate-100 dark:bg-slate-800'
                   : 'hover:bg-gray-100 dark:hover:bg-gray-700'
@@ -78,7 +78,7 @@ export function WordDisplay({
             >
               {audioPlaying ? (
                 <span className="flex items-center">
-                  <span className="w-4 h-4 mr-1 bg-slate-500 rounded-full animate-pulse"></span>
+                  <span className="w-4 h-4 mr-1 bg-slate-500 dark:bg-slate-400 rounded-full animate-pulse"></span>
                   <Volume2 className="w-5 h-5" />
                 </span>
               ) : (
@@ -88,7 +88,7 @@ export function WordDisplay({
           )}
 
           <button
-            className={`p-2 rounded-full ${
+            className={`p-2 rounded-full text-gray-700 dark:text-gray-300 ${
               speaking
                 ? 'bg-slate-100 dark:bg-slate-800'
                 : 'hover:bg-gray-100 dark:hover:bg-gray-700'
@@ -100,7 +100,7 @@ export function WordDisplay({
           >
             {speaking ? (
               <span className="flex items-center">
-                <span className="w-4 h-4 mr-1 bg-slate-500 rounded-full animate-pulse"></span>
+                <span className="w-4 h-4 mr-1 bg-slate-500 dark:bg-slate-400 rounded-full animate-pulse"></span>
                 <Mic className="w-5 h-5" />
               </span>
             ) : (
