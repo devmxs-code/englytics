@@ -101,7 +101,8 @@ export function useTranslation(language: Language, definitions: DictionaryRespon
       setDefinitionTranslations({});
       setExampleTranslations({});
     }
-  }, [language, definitions, translationCache, setTranslationCache]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [language, definitions, setTranslationCache]);
 
   useEffect(() => {
     translateDefinitionsAndExamples();

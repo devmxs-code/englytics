@@ -1,6 +1,5 @@
 import { Language } from '../../types';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
-import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 interface HeaderProps {
   language: Language;
@@ -8,7 +7,6 @@ interface HeaderProps {
 }
 
 export function Header({ language, onLanguageChange }: HeaderProps) {
-  const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
     <header className="bg-white dark:bg-gray-800 shadow-md py-4 px-6 sticky top-0 z-50">

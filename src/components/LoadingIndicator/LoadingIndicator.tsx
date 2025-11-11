@@ -1,5 +1,3 @@
-import { TranslationKeys } from '../../types';
-
 interface LoadingIndicatorProps {
   text: string;
 }

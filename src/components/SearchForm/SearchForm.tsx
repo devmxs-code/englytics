@@ -1,6 +1,5 @@
 import { FormEvent } from 'react';
 import { Search } from 'lucide-react';
-import { TranslationKeys } from '../../types/translations';
 
 interface SearchFormProps {
   placeholder: string;
